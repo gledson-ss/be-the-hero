@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './global.css';
-import Logon from './pages/Logon';
+
+import Routes from './routes';
 
 //componente = função que retorna html
 
@@ -9,7 +10,7 @@ import Logon from './pages/Logon';
 function App() {
 
   return (
-    <Logon/>
+    <Routes/>
   );
 }
 
