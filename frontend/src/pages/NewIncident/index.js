@@ -6,6 +6,7 @@ import { FiArrowLeft } from 'react-icons/fi';
 import './styles.css';
 
 import logoImg from '../../assets/logo.svg';
+
 export default function NewIncident(){
     return (
         <div className="new-incident-container">

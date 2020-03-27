@@ -1,15 +1,17 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import { FiPower, FiTrash2 } from 'react-icons/fi';
 import logoImg from '../../assets/logo.svg';
 import './styles.css';
 
 export default function Profiles(){
+    const ongName = localStorage.getItem('ongName');
+
     return (
         <div className="profile-container">
             <header>
                 <img src={logoImg} alt="Be the Hero"/>
-                <span>Bem vinda, APAD</span>
+                <span>Bem vinda, {ongName}</span>
 
                 <Link className="buttom" to="/incidents/new">Cadastrar novo caso</Link>
                 <button type="buttom">
